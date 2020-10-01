@@ -1,0 +1,60 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow-x: hidden;
+    /* margin: 0 auto; */
+    height: 100%;
+    /* width: 100%; */
+}
+
+#nav{
+    background-color: black;
+}
+
+#list a{
+    padding-right: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#list a:hover{
+    color:#725C85;
+}
+
+#logo{
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:darkgreen;
+    text-shadow: 2px 2px 4px white;
+
+}
+
+.logo{
+  height:30px;
+  width:30px;
+}
+
+#search{
+  margin-right:-40px;
+  width : 300px;
+}
+
+#search_button{
+  background-color: lightblue;
+  width : 40px;
+  height : 39px;
+  margin-right:100px;
+}
+
+#account{
+  height:40px;
+  width:40px;
+}
+
+#cart-total{
+  margin-left: -75px;
+  color:white;
+}

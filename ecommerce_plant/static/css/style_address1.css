@@ -1,0 +1,130 @@
+.form-field{
+	width:300px;
+	display: inline-block;
+	padding-top: 25px;
+  margin-left: 3%;
+  height:70px;
+  border-radius: 0%;
+}
+
+#text_form{
+  height:50px;
+  width:100%;
+  border-radius: 1%;
+  border:1px solid white;
+}
+
+#text_form_address{
+  height:80px;
+  width:74.5%;
+  margin-left: 3%;
+  margin-top: 5%;
+  border-radius: 1%;
+  border:1px solid white;
+}
+
+#address{
+  color:#67B7F0;
+}
+
+#margin{
+  margin-top: 100px;
+  margin-left: 10%;
+  /* width:1800px; */
+}
+
+.box-element{
+	box-shadow:hsl(0, 0%, 80%) 0 0 16px;
+	background-color: #F4F7F9;
+	/* border-radius: 4px; */
+	padding: 10px;
+  height:550px;
+}
+
+#continue{
+  width:200px;
+  height : 50px;
+  margin-left: 3%;
+}
+
+#place_order{
+  /* float:right; */
+  margin-left: 60%;
+}
+
+#name{
+  color:black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#category{
+  color:lightgray;
+}
+
+#price{
+  color:orange;
+  font-size: 25px;
+}
+
+#delivery{
+  font-family: Trebuchet MS;
+  /* font-size: 17px; */
+}
+
+#amount{
+  padding-left:20%;
+}
+
+#box2{
+ margin-top: 100px;
+ font-family: Trebuchet MS;
+ font-size: 17px;
+ height:250px;
+}
+
+#total_price{
+  color : brown;
+}
+
+#delivery_charge{
+  color : green;
+}
+
+#total_style{
+  /* color : brown; */
+  font-weight:bold;
+  font-size:20px;
+}
+
+#total_amount{
+  color : brown;
+  font-weight:bold;
+  font-size:20px;
+}
+
+#price_details{
+  color:gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    #margin {
+      margin-left: 0%;
+    }
+}

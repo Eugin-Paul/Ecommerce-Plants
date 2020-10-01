@@ -1,0 +1,175 @@
+body{
+  background-color: white;
+  font-family:cursive;
+}
+
+#box1{
+  height:100px;
+  width:700px;
+
+}
+
+#heading{
+  font-family: Courier;
+  font-weight: bold;
+}
+
+.box-element{
+	box-shadow:hsl(0, 0%, 80%) 0 0 16px;
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 10px;
+}
+
+.image_view{
+  height : 200px;
+  width : 200px;
+}
+
+.chg-quantity{
+	width: 12px;
+	transition:.1s;
+}
+
+#box{
+ margin-top: 100px;
+}
+
+#box_height{
+ height : 250px;
+ align-items: center;
+}
+
+#box1{
+  border-bottom: 2px solid black;
+}
+
+#pointer{
+  cursor : pointer;
+}
+
+#quantity{
+  /* border: 1px solid grey; */
+  /* border-radius: 50%; */
+
+}
+
+/* #place_order{
+  box-shadow:hsl(0, 0%, 80%) 0 0 16px;
+  background-color: #fff;
+  width:100%;
+  height:70px;
+}
+
+#placed{
+  float:right;
+  width:150px;
+  height:40px;
+} */
+
+#place_order{
+  /* float:right; */
+  /* margin-left: 60%; */
+}
+
+#name{
+  color:black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#category{
+  color:lightgray;
+}
+
+#price{
+  color:orange;
+  font-size: 25px;
+}
+
+#delivery{
+  font-family: Trebuchet MS;
+  /* font-size: 17px; */
+}
+
+#amount{
+  /* padding-left:20%; */
+}
+
+#box2{
+ margin-top: 100px;
+ font-family: Trebuchet MS;
+ font-size: 17px;
+ background-color: #F4F7F9;
+}
+
+#total_price{
+  color : brown;
+}
+
+#delivery_charge{
+  color : green;
+}
+
+#total_style{
+  /* color : brown; */
+  font-weight:bold;
+  font-size:20px;
+}
+
+#total_amount{
+  color : brown;
+  font-weight:bold;
+  font-size:20px;
+}
+
+#margin{
+  margin-left: 5%;
+}
+
+#price_details{
+  color:gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    #place_order {
+      margin-left: 2%;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    #margin {
+      margin-left: 0%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #box {
+      margin-left: 0%;
+      /* margin-right: 20%; */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #delivery {
+      display: none;
+    }
+}
+
+/* @media only screen and (max-width: 600px) {
+    .image_view {
+      margin-left: 20%;
+    }
+} */

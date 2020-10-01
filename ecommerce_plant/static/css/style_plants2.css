@@ -1,0 +1,115 @@
+body{
+  background-color: #F6F5F9;
+}
+
+#plant_detail{
+  background-color: #F6F5F9;
+  font-family: Trebuchet MS;
+}
+
+.product-small-img img{
+  height : 100px;
+  width : 100px;
+  margin-left:33%;
+  cursor:pointer;
+  display:block;
+  opacity:.75;
+  /* padding-top:-50px; */
+}
+
+.product-small-img img:hover{
+  opacity:1
+}
+
+#product{
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%)
+  position:absolute;
+}
+
+.img-container img{
+  height:500px;
+}
+
+.img-container{
+  /* margin-left: 100px; */
+  margin-top:-302px;
+  float:right;
+}
+
+input {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+#plant_name{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#plant_amount{
+  font-size: 35px;
+  color : orange;
+  /* font-weight: bold; */
+}
+
+#plant_inclusive{
+  color:grey;
+}
+
+#plant_moredetails{
+  /* font-family: Times; */
+  /* color:red; */
+  text-decoration:none;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+#plant_view{
+  font-family: Times New Roman;
+  font-weight: lighter;
+  /* color:lightblue; */
+}
+
+#plant_pincode{
+  width:225px;
+  height:50px;
+  border-radius: 1%;
+  /* border-color: green; */
+  /* box-shadow:   inset 2px 2px 2px green,
+  inset -1px -1px 2px green; */
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+#pincode_text{
+  font-family: Trebuchet;
+}
+
+#plant_pincode:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 190, 169, 4);
+    /* transform: scaleX(-1); */
+    /* opacity: 0.3; */
+}
+
+#plant_buynow, #plant_addtocart{
+  width:225px;
+  height:50px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color:white;
+}
+
+#text_add{
+  font-family: Trebuchet MS;
+  font-size: 20px;
+  color:#E9E5F3;
+}
+
+.btn btn-warning{
+  background-color:#ED551B;
+}
+
+#plant_descripton,#plant_instructions{
+  font-weight: bold;
+}

@@ -1,0 +1,26 @@
+{% extends "plant/base.html" %}
+
+{% load static %}
+
+{% block title %}{{plant.name}}{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style_plants.css' %}" >
+
+<div id = "services" class="jumbotron jumbotron-fluid">
+
+          <div class = "product">
+          <div class="product-small-img">
+            <img src = "{% static 'images/plant1.png' %}"  >
+            <img src = "{% static 'images/plant2.png' %}"  >
+            <img src = "{% static 'images/plant3.png' %}"  >
+            </div>
+
+            <div class = "img-contaier">
+            <img src = "{% static 'images/plant1.png' %}"  >
+            </div>
+
+        </div>
+
+
+{% endblock %}

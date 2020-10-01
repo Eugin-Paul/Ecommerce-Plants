@@ -1,0 +1,80 @@
+{% extends "plant/base.html" %}
+
+{% load static %}
+
+{% block title %}{{products.name}}{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style_plants2.css' %}" >
+
+<!-- <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">Home</li>
+  </ol>
+</nav>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+    <li class="breadcrumb-item"><a href="{% url 'home' %}">Plants</a></li>
+    <li class="breadcrumb-item active" aria-current="page">{{plant.name}}</li>
+  </ol>
+</nav> -->
+
+<div id = "plant_detail" class="jumbotron jumbotron-fluid mt-5 ">
+            <div class="row">
+
+              <div id = "plant_page" class="col-md-6 sm-12">
+
+              <div id = "product" class = "product">
+
+              <div class="product-small-img">
+                <img src = "{% static 'images/plant2.png' %}" onclick = "myFunction(this)"  >
+                <img src = "{{products.image1URL}}" onclick = "myFunction(this)"  >
+                <img src = "{% static 'images/plant3.png' %}" onclick = "myFunction(this)" >
+                </div>
+                </div>
+
+
+                <div class = "img-container">
+                  <div id = "card_box" class="card">
+
+                      <img id = "imageBox" src = "{{products.imageURL}}"  >
+                  </div>
+                </div>
+
+            </div>
+
+            <div id = "#" class="col-md-4 sm-12">
+
+                    <p id = "plant_name">
+                      {{products.name}}
+                    </p>
+                    <p id = "plant_symbol">₹ <span id = "plant_amount">{{products.price}}</span></p>
+                    <p id = "plant_inclusive">Inclusive of all taxes</p>
+                    <p><a id = "plant_moredetails" href = "#plant_descripton"> &#xf078 <span id = "plant_view">View more details</span></a></p>
+                    <form action = "{% url 'pincode' products.id %}" method = "GET">
+                      <!-- {{form}} -->
+                      <input id = "plant_pincode" type="text" id="pin_code" name="pin_code" placeholder = '  &#xf3c5   Enter Pincode' style='font-weight:600' ><br>
+                    </form>
+                    <br/><br/><button data-product = {{products.id}} data-action = "add" class="btn btn-success update-cart" id = "plant_addtocart" type="button" class="btn btn-success">&#xf217 <span id = "text_add">&nbspADD TO CART</span></button>
+                    <a href = "{% url 'address' %}"><button id = "plant_buynow" type="button" class="btn btn-dark">&#xf019 <span id = "text_add">&nbspBUY NOW</span></button></a>
+                    <p id = "plant_descripton"><br/><br/>Description</p>
+                    <hr />
+                    <p id = "plant_instructions">Product Details:</p>
+                    <ul>
+                        <li><i class="glyphicon glyphicon-chevron-right"></i> Plant Name- Arelia</li>
+                        <li><i class="glyphicon glyphicon-chevron-right"></i> Plant Type- Air Purifying Foliage</li>
+                    </ul>
+          </div>
+
+            <script>
+             function myFunction(smallImg)
+             {
+               var fullImg = document.getElementById("imageBox");
+               fullImg.src = smallImg.src
+             }
+           </script>
+
+
+{% endblock %}

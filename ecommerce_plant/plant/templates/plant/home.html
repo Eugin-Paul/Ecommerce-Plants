@@ -1,0 +1,61 @@
+{% extends "plant/base.html" %}
+
+{% load static %}
+
+{% block title %}Plant{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style_home2.css' %}" >
+
+<!-- <div id = "sorting" class="jumbotron jumbotron-fluid">
+      <div class="row">
+  <div id = "sort" class="col-md-0 pl-2 sm-12" >Sort By :
+  </div>
+  <div id = "sort" class="col-md-0 sm-12" >New
+  </div>
+  <div id = "sort" class="col-md-0 sm-12" >Price:Low to High
+  </div>
+  <div  id = "sort" class="col-md-0" >Price : High to Low
+  </div>
+</div>
+</div> -->
+
+<div id = "services" class="jumbotron jumbotron-fluid">
+  <p class = "d-flex justify-content-center p-2  pr-5 sm-12" id = "happiness">
+    Let the Happiness Speak &nbsp <i class="far fa-smile p-1"></i>
+  </p>
+  <div id = "dropdown" class="dropdown pt-3">
+    <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Sort By&nbsp<i class="fas fa-sort"></i>
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="{% url 'sort_low_to_high' %}">Price:Low to High</a>
+      <a class="dropdown-item" href="{% url 'sort_high_to_low' %}">Price : High to Low</a>
+      <a class="dropdown-item" href="{% url 'sort_new' %}">New</a>
+      <a class="dropdown-item" href="{% url 'sort_old' %}">Oldest</a>
+    </div>
+  </div>
+          <div class = "box_project"></div>
+          <div class="container-fluid">
+            <div class="row">
+              {% for product in products %}
+
+              <div id = "project_card" class="col-md-3 sm-6 sm-6 pt-5">
+                <div id = "card_box" class="card">
+                  <a href="{% url 'plants' product.id %}">
+                    <img id ="card_image"  alt=".." src="{{product.imageURL}}"></a>
+                  <div class="card-body">
+                    <a id = "sub_heading"  href ="{% url 'plants' product.id %}" class="card-title">{{product.name}}</a>
+                    <p id = "amount" class="card-text pt-2">₹{{product.price}}</p>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+
+
+            </div>
+          </div>
+        </div>
+
+
+{% endblock %}
